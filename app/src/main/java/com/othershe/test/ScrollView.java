@@ -100,7 +100,3 @@ public class ScrollView extends RelativeLayout {
     }
 }
 
-//测试stash
-class TestStash {
-
-}
