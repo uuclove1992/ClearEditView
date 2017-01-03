@@ -65,29 +65,29 @@ public class ScrollView extends RelativeLayout {
     public boolean onTouchEvent(MotionEvent event) {
         int x = (int) event.getRawX();
         int y = (int) event.getRawY();
-        Log.i(TAG,"X->"+x+" "+"Y->"+y);
+        Log.i(TAG, "X->" + x + " " + "Y->" + y);
         int x1 = (int) event.getX();
         int y1 = (int) event.getY();
-        Log.i(TAG,"X1->"+x1+" "+"Y1->"+y1);
+        Log.i(TAG, "X1->" + x1 + " " + "Y1->" + y1);
         switch (event.getAction()) {
             case MotionEvent.ACTION_DOWN:
-                Log.i(TAG,"*****************************MotionEvent.ACTION_DOWN");
+                Log.i(TAG, "*****************************MotionEvent.ACTION_DOWN");
 
                 break;
             case MotionEvent.ACTION_UP:
-                Log.i(TAG,"*****************************MotionEvent.ACTION_UP");
+                Log.i(TAG, "*****************************MotionEvent.ACTION_UP");
 
                 break;
             case MotionEvent.ACTION_MOVE:
-                Log.i(TAG,"*****************************MotionEvent.ACTION_MOVE");
+                Log.i(TAG, "*****************************MotionEvent.ACTION_MOVE");
 
                 int deltaX = x - mLastX;
                 int deltaY = y - mLastY;
-                Log.i(TAG,"deltaX->"+deltaX+" "+"deltaY->"+deltaY);
+                Log.i(TAG, "deltaX->" + deltaX + " " + "deltaY->" + deltaY);
 
                 int translationX = (int) ViewHelper.getTranslationX(mImageView) + deltaX;
                 int translationY = (int) ViewHelper.getTranslationY(mImageView) + deltaY;
-                Log.i(TAG,"translationX->"+translationX+" "+"translationY->"+translationY);
+                Log.i(TAG, "translationX->" + translationX + " " + "translationY->" + translationY);
 
                 ViewHelper.setTranslationX(mImageView, translationX);
                 ViewHelper.setTranslationY(mImageView, translationY);
@@ -95,8 +95,12 @@ public class ScrollView extends RelativeLayout {
         }
         mLastX = x;
         mLastY = y;
-        Log.i(TAG,"mLastX->"+mLastX+" "+"mLastY->"+mLastY);
-
+        Log.i(TAG, "mLastX->" + mLastX + " " + "mLastY->" + mLastY);
         return true;
     }
+}
+
+//测试stash
+class TestStash {
+
 }
