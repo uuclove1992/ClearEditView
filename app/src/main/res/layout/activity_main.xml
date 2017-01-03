@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#7b86ac"
+    android:orientation="vertical"
+    android:padding="30dp">
+
+    <com.othershe.test.ClearEditTextView
+        android:id="@+id/phone_num_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/clear_edittext_bg"
+        android:drawableLeft="@drawable/phone"
+        android:drawablePadding="5dp"
+        android:hint="手机号"
+        android:inputType="phone"
+        android:lines="1"
+        android:maxLength="11"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textColorHint="#88cccccc" />
+
+    <com.othershe.test.ClearEditTextView
+        android:id="@+id/password_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/clear_edittext_bg"
+        android:drawableLeft="@drawable/password"
+        android:drawablePadding="5dp"
+        android:hint="密码"
+        android:inputType="textPassword"
+        android:lines="1"
+        android:maxLength="20"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textColorHint="#88cccccc" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp">
+
+        <com.othershe.test.ClearEditTextView
+            android:id="@+id/msg_code_et"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_weight="6"
+            android:background="@drawable/clear_edittext_bg"
+            android:drawableLeft="@drawable/code"
+            android:drawablePadding="5dp"
+            android:hint="验证码"
+            android:inputType="number"
+            android:lines="1"
+            android:maxLength="4"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textColorHint="#88cccccc" />
+
+        <Button
+            android:id="@+id/msg_code_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="4"
+            android:background="@drawable/btn_bg"
+            android:enabled="false"
+            android:minHeight="1dp"
+            android:minWidth="1dp"
+            android:padding="10dp"
+            android:text="发送验证码"
+            android:textColor="#ffffff"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/login_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btn_bg_blue"
+        android:text="点我登录"
+        android:textColor="#ffffff" />
+
+</LinearLayout>
