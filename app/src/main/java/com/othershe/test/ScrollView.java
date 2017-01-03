@@ -96,11 +96,9 @@ public class ScrollView extends RelativeLayout {
         mLastX = x;
         mLastY = y;
         Log.i(TAG, "mLastX->" + mLastX + " " + "mLastY->" + mLastY);
+
+        //qe4rfasdgbhfdsbhsbd
         return true;
     }
 }
 
-//测试stash
-class TestStash {
-
-}
