@@ -7,7 +7,7 @@
     <com.othershe.test.MyScrollView
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
-        app:columns="4">
+        app:columns="3">
 
     </com.othershe.test.MyScrollView>
 </LinearLayout>
