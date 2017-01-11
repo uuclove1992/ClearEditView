@@ -14,7 +14,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="top|left"
-            android:text="hi" />
+            android:text="hi"
+            android:layout_marginLeft="10dp"/>
     </RelativeLayout>
 
     <RelativeLayout
@@ -31,7 +32,7 @@
             android:src="@drawable/phone" />
     </RelativeLayout>
 
-    <com.othershe.test.ScrollView
+    <com.othershe.test.TestScrollView
         android:id="@+id/mScrollView"
         android:layout_width="fill_parent"
         android:layout_height="100dip"

@@ -1,0 +1,5 @@
+<resources>
+    <declare-styleable name="MyScrollView">
+        <attr name="columns" format="integer" />
+    </declare-styleable>
+</resources>
