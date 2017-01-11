@@ -10,4 +10,7 @@
         app:columns="3">
 
     </com.othershe.test.MyScrollView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
 </LinearLayout>
