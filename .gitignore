@@ -1,17 +1,12 @@
-*.iml
-.gradle
-/local.properties
-/.idea/workspace.xml
-/.idea/libraries
-.DS_Store
-/build
-/captures
-.externalNativeBuild
-
-
 # Built application files
 *.apk
 *.ap_
+*.iml
+
+/.idea
+*.ipr
+*.iws
+out/
 
 # Files for the Dalvik VM
 *.dex
@@ -20,8 +15,9 @@
 *.class
 
 # Generated files
-bin/
-gen/
+bin
+gen
+.metadata
 
 # Gradle files
 .gradle/
@@ -36,11 +32,11 @@ proguard/
 # Log Files
 *.log
 
-# Windows clutter
-Thumbs.db
+#Temp files
+*.bak
+*.temp
+*.tmp
+*.swp
+.~
+~*.*
 
-# Intellij IDEA (see https://intellij-support.jetbrains.com/entries/23393067)
-.idea/workspace.xml
-.idea/tasks.xml
-.idea/datasources.xml
-.idea/dataSources.ids
