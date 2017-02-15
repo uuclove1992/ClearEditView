@@ -7,11 +7,14 @@
     <com.othershe.test.MyScrollView
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
-        app:columns="123124214">
+        app:columns="123124214"
+        >
 
     </com.othershe.test.MyScrollView>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="mergeFeature_rebase_master"/>
+        android:text="mergeFeature_rebase_feature"
+        />
+
 </LinearLayout>
