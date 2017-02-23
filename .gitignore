@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 [html] view plain copy print?# OSX
 
 *.DS_Store
@@ -27,6 +28,11 @@ build/
 *.apk
 *.ap_
 
+/.idea
+*.ipr
+*.iws
+out/
+
 
 # Files for the Dalvik VM
 *.dex
@@ -37,9 +43,9 @@ build/
 
 
 # Generated files
-antLauncher/bin
-antLauncher/gen
-
+bin
+gen
+.metadata
 
 # Local configuration file (sdk path, etc)
 local.properties
@@ -47,3 +53,13 @@ local.properties
 
 # Log Files
 *.log
+
+
+#Temp files
+*.bak
+*.temp
+*.tmp
+*.swp
+.~
+~*.*
+
