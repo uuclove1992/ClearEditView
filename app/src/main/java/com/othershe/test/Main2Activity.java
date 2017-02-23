@@ -8,6 +8,7 @@ import android.util.TypedValue;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -72,8 +73,13 @@ public class Main2Activity extends Activity implements OnClickListener, View.OnT
 //         searchView=new SearchView(Main2Activity.this);
 //        MatrixView1 matrixView = new MatrixView1(Main2Activity.this);
         BitmapShaderView bitmapShaderView = new BitmapShaderView(Main2Activity.this);
-//        SloopView sloopView=new SloopView(Main2Activity.this);
-//        root.addView(bitmapShaderView, new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT));
+        SloopView sloopView=new SloopView(Main2Activity.this);
+        RippleView rippleView=new RippleView(Main2Activity.this);
+        LinearLayout.LayoutParams params=new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT,100);
+        params.setMargins(0,0,0,0);
+//        rippleView.setLayoutParams(params);
+//        rippleView.setPadding(0,0,0,0);
+        root.addView(rippleView, params);
 
     }
 

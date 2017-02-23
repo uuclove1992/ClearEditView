@@ -6,7 +6,8 @@ import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
-import android.graphics.Rect;
+import android.graphics.PorterDuff;
+import android.graphics.PorterDuffXfermode;
 import android.util.AttributeSet;
 import android.util.Log;
 import android.view.View;
@@ -70,10 +71,18 @@ public class SloopView extends View {
 
         // TODO: consider storing these as member variables to reduce
 //        canvas.translate(mWidth / 2, mHeight / 2);
-        int min = Math.min(mWidth, mHeight);
-        mBitmap = Bitmap.createScaledBitmap(mBitmap, 2 * min, 2 * min, false);
-        Bitmap bitmap = getBitmap(min);
-        canvas.drawBitmap(bitmap, 0, 0, null);
+//        int min = Math.min(mWidth, mHeight);
+//        mBitmap = Bitmap.createScaledBitmap(mBitmap, min, min, false);
+//        Bitmap bitmap = getBitmap(min);
+//        canvas.drawBitmap(bitmap, 0, 0, null);
+
+        canvas.drawColor(Color.RED);
+        canvas.save();
+//        canvas.saveLayer(0, 0, 500, 500, mPaint, Canvas.CLIP_TO_LAYER_SAVE_FLAG);
+        canvas.clipRect(0,0,500,500);
+        canvas.restore();
+
+        canvas.drawColor(Color.YELLOW);
     }
 
     private Bitmap getBitmap(int min) {
@@ -83,11 +92,9 @@ public class SloopView extends View {
 //        canvas.setBitmap(target);
         canvas.setBitmap(target);
         paint.setColor(Color.BLUE);
-        Rect rect = new Rect(0, 0, 50, 50);
-        canvas.drawRect(rect, paint);
         canvas.drawCircle(min / 2, min / 2, min / 2, paint);
-//        paint.setXfermode(new PorterDuffXfermode(PorterDuff.Mode.SRC_IN));
-//        canvas.drawBitmap(mBitmap, 0, 0, paint);
+        paint.setXfermode(new PorterDuffXfermode(PorterDuff.Mode.SRC_IN));
+        canvas.drawBitmap(mBitmap, 0, 0, paint);
         return target;
     }
 

@@ -98,6 +98,7 @@ public class AutoCardLayout extends ViewGroup {
             int widthSpec = MeasureSpec.makeMeasureSpec(childWidth, MeasureSpec.EXACTLY);
             int heightSpec = MeasureSpec.makeMeasureSpec(0, MeasureSpec.UNSPECIFIED);
             child.measure(widthSpec, heightSpec);
+            measureChild(child,widthMeasureSpec,heightMeasureSpec);
             if (columns > 1)
                 index = i % columns;
             columnHeight[index] += child.getMeasuredHeight();

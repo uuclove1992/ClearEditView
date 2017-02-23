@@ -22,9 +22,9 @@
         android:visibility="gone" />
 
     <com.othershe.test.SloopView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:visibility="visible"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:visibility="gone"
         android:src="@drawable/photo"/>
 
     <SeekBar
@@ -46,4 +46,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Uncheck" />
+
+    <EditText
+        android:layout_width="240dp"
+        android:layout_height="34dp"
+        android:background="@drawable/edit_bg"/>
 </LinearLayout>

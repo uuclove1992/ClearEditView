@@ -31,6 +31,11 @@ public class BitmapShaderView extends View {
         init(null, 0);
     }
 
+    @Override
+    public boolean dispatchTouchEvent(MotionEvent event) {
+        return super.dispatchTouchEvent(event);
+    }
+
     public BitmapShaderView(Context context, AttributeSet attrs) {
         super(context, attrs);
         init(attrs, 0);

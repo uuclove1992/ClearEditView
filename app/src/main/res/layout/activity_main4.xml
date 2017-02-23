@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/material_deep_teal_500"
+    tools:context="com.othershe.Main4Activity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_marginTop="-100dp"
+        android:background="@drawable/p4"
+        android:visibility="visible"
+        android:id="@+id/img"/>
+
+
+    <com.othershe.pullToScroll.PullToScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/pullToScrollView">
+
+        <TableLayout
+            android:id="@+id/tableLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="150dp"></TableLayout>
+    </com.othershe.pullToScroll.PullToScrollView>
+
+
+</RelativeLayout>
